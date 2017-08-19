@@ -9,8 +9,12 @@ import 'font-awesome/css/font-awesome.css';
 
 const buttonStyles = {
   backgroundColor: '#aabbcc',
-  width: '100px',
-  height: '100px',
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
+
 };
 
 const iconStyles = {
