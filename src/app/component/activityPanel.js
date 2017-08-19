@@ -24,6 +24,8 @@ const styles = {
   gridTile: {
   	height: '120px',
     width: '100%',
+    marginTop: '2px',
+    paddingTop: '20px',
   },
 };
 
@@ -44,6 +46,7 @@ export default class activityPanel extends PureComponent {
 					<GridList 
 						cellHeight='auto' 
 						style={styles.gridList} 
+						padding={4}
 						cols={(this.state.width*0.8)/120}>
 						{activityChild}
 					</GridList>
