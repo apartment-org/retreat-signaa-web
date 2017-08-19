@@ -3,7 +3,7 @@ import React, {PureComponent, PropTypes} from 'react';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FontIcon from 'material-ui/FontIcon';
-import RaisedButton from 'material-ui/RaisedButton';
+import IconButton from 'material-ui/IconButton';
 import {green100, green500, green700} from 'material-ui/styles/colors';
 import 'font-awesome/css/font-awesome.css';
 
@@ -13,9 +13,10 @@ const buttonStyles = {
   height: '100px',
 };
 
+
+
 const iconStyles = {
-  fontSize: '5em',
-  color: '#aabbcc',
+  fontSize: '50px',
 };
 
 const muiTheme = getMuiTheme({
@@ -28,15 +29,16 @@ export default class activity extends PureComponent {
 	render(){
 		return (
 			<MuiThemeProvider muiTheme={muiTheme}>
-		        <RaisedButton
-				      icon={
+				<IconButton 
+	      			children={
 				      		<FontIcon 
 				      			className={this.props.classes} 
 				      			style={iconStyles}
 			      			/>
 			      		}
-				      style={buttonStyles}
-				    />
+		      		iconStyle={iconStyles}
+      			/>
+		        
 	    	</MuiThemeProvider>
 		)
 	}
