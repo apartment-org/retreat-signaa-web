@@ -32,8 +32,9 @@ export default class activity extends PureComponent {
 	render(){
 		return (
 			<MuiThemeProvider muiTheme={muiTheme}>
-		        <RaisedButton
-				      icon={
+				<div id={this.props.id}>
+			        <RaisedButton
+		        	  icon={
 				      		<FontIcon 
 				      			className={this.props.classes} 
 				      			style={iconStyles}
@@ -41,6 +42,7 @@ export default class activity extends PureComponent {
 			      		}
 				      style={buttonStyles}
 				    />
+			    </div>
 	    	</MuiThemeProvider>
 		)
 	}
